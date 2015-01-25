@@ -14,7 +14,7 @@
         /* Sparklines can also take their values from the first argument 
         passed to the sparkline() function */
         var myvalues = [10,8,5,7,4,4,1];
-        $('.dynamicsparkline').sparkline(myvalues);
+        $('.dynamicsparkline').sparkline(myvalues, {width: '100px', height: '25px'});
 
         /* The second argument gives options such as chart type */
         $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
