@@ -29,6 +29,32 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	
+	<!-- Script for Sparklines -->
+	
+	 <script type="text/javascript">
+    $(function() {
+        /** This code runs when everything has been loaded on the page */
+        /* Inline sparklines take their values from the contents of the tag */
+        $('.inlinesparkline').sparkline(); 
+
+        /* Sparklines can also take their values from the first argument 
+        passed to the sparkline() function */
+        var myvalues = [10,8,5,7,4,4,1];
+        $('.dynamicsparkline').sparkline(myvalues);
+
+        /* The second argument gives options such as chart type */
+        $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
+
+        /* Use 'html' instead of an array of values to pass options 
+        to a sparkline with data in the tag */
+        $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+    });
+    </script>
+	
+	<!-- End of Sparkline Script-->
+	
   </head>
 
   <body>
@@ -194,7 +220,7 @@
             <td>Credit Card</td>
             <td>04/07/2014</td>
             <td>Call in to confirm</td>
-			<td>Call in to confirm</td>
+			<td>5.48 - <span class="inlinesparkline">5.5,6,4,5,5,6,5.48</span></td>
         </tr>        
             <td>2</td>
             <td>Water</td>
