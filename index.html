@@ -46,7 +46,9 @@
         /* Sparklines can also take their values from the first argument 
         passed to the sparkline() function */
         var myvalues = [10,8,5,7,4,4,1];
-        $('.dynamicsparkline').sparkline(myvalues);
+		var myvalues = [10,17,25,27,23,25,30];
+        $('.dynamicsparkline').sparkline(myvalues, {width: '100px', height: '25px'});
+		$('.dynamicsparkline2').sparkline(myvalues2, {width: '100px', height: '25px'});
 
         /* The second argument gives options such as chart type */
         $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
@@ -213,44 +215,58 @@
         <tr>
             <th>Coin</th>
             <th>Algo</th>
-            <th>Difficulty</th>
             <th>Price</th>
+            <th>Difficulty</th>
 			<th>Profitability</th>
         </tr>
     </thead>
     <tbody>
         <tr class="info">
-            <td>1</td>
-            <td>Credit Card</td>
-            <td>04/07/2014</td>
-            <td>Call in to confirm</td>
-			<td>5.48 - <span class="inlinesparkline"><!--5.5,6,4,5,5,6,5.48,5.5,6,4,5,5,6,5.48--></span></td>
+            <td>LuckyCoin</td>
+            <td>Scrypt</td>
+            <td>.00000450  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>2.08  <span class="dynamicsparkline">Loading..</span></td>
+			<td>11.7</td>
         </tr>        
-            <td>2</td>
-            <td>Water</td>
-            <td>01/07/2014</td>
-            <td>Paid</td>
-			<td>Paid</span></td>
+            <td>DigiGems</td>
+            <td>Scrypt</td>
+            <td>.00000015  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>5.07  <span class="dynamicsparkline">Loading..</span></td>
+			<td>.76</span></td>
         </tr>
         <tr class="info">
-            <td>3</td>
-            <td>Internet</td>
-            <td>05/07/2014</td>
-            <td>Change plan</td>
-			<td>Change plan</td>
+            <td>DogeCoinDark</td>
+            <td>Scrypt</td>
+            <td>.00000002  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>8.7  <span class="dynamicsparkline">Loading..</span></td>
+			<td>-3.7</td>
         </tr>        
-            <td>4</td>
-            <td>Electricity</td>
-            <td>03/07/2014</td>
-            <td>Pending</td>
-			<td>Pending</td>
+            <td>AmericanCoin</td>
+            <td>Scrypt</td>
+            <td>.00000065  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>4.7  <span class="dynamicsparkline">Loading..</span></td>
+			<td>1.35</td>
         </tr>
         <tr class="info">
-            <td>5</td>
-            <td>Telephone</td>
-            <td>06/07/2014</td>
-            <td>Due</td>
-			<td>Due</td>
+            <td>FastCoin</td>
+            <td>Scrypt</td>
+            <td>.00000035  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>2.7  <span class="dynamicsparkline">Loading..</span></td>
+			<td>.98</td>
+        </tr>
+		</tr>        
+            <td>BDSM</td>
+            <td>SHA256</td>
+            <td>.00000015  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>2048  <span class="dynamicsparkline">Loading..</span></td>
+			<td>-3.5</td>
+        </tr>
+        <tr class="info">
+            <td>Fetish</td>
+            <td>SHA256</td>
+            <td>.00000050  <span class="dynamicsparkline2">Loading..</span></td>
+            <td>5072  <span class="dynamicsparkline">Loading..</span></td>
+			<td>-5.2</td>
         </tr>
     </tbody>
 </table>
